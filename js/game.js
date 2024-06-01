@@ -22,7 +22,6 @@ const fetchData = async () => {
     const responce = await fetch(URL);
     const json = await responce.json();
     formattedData = formatData(json.results);
-    console.log(formattedData);
     start();
   } catch {
     loader.style.display = "none";
