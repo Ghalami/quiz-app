@@ -4,7 +4,6 @@ const scoreEle = document.querySelector("p");
 const button = document.querySelector("button");
 const input = document.querySelector("input");
 scoreEle.innerText = score;
-console.log(input.value);
 const saveHandeler = () => {
   if (!input.value || !score) {
     alert("Invalid username or score");
